@@ -39,14 +39,18 @@ let company = function (){
 
 Closure examples:
 
-let name = "Abdussomad Abdulqoddir Pa-aranti"
-
-function printName () {
-    console.log(name)
-    function fullName () {
-        console.log(printName())
+function printName() {
+    let name = "Abdussomad"
+    function fullName() {
+        let surName = "Abdulqodir"
+        let lastname = "Pa-aranti"
+        let fullName = `${name} ${surName} ${lastname}`
+        return fullName
     }
+    return fullName()
 }
+console.log(printName())
+
 
 Question 3 Solution;
 What are pure & impure functions?
